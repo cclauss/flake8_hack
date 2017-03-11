@@ -16,15 +16,17 @@ before_install:
     - # pip3 -V     # Error!
     - echo $HOME
     - echo ~
+    - echo $PATH
     - pwd
     - ls
-    - mkdir Python3
-    - cd Python3
-    - pwd
+    - #mkdir Python3
+    - #cd Python3
+    - #pwd
     - wget https://s3.amazonaws.com/travis-python-archives/binaries/ubuntu/14.04/x86_64/python-3.6.0.tar.bz2
-    - ls /
-    - tar xjf python-3.6.0.tar.bz2 --directory /
-    - ls /
+    - ls
+    - tar xjf python-3.6.0.tar.bz2
+    - ls
+    - ls -R
     - python --version
     - python3 --version
     - source ~/virtualenv/python3.6.0/bin/activate
