@@ -20,6 +20,9 @@ install:
     - echo $PATH
     - pwd
     - ls
+    - cd ..
+    - pwd
+    - ls
     - #mkdir Python3
     - #cd Python3
     - #pwd
