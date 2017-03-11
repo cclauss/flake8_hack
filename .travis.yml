@@ -1,4 +1,4 @@
-sudo: false
+sudo: true
 language: scala  # NOT a Python repo!
 scala:
    - 2.11.2
