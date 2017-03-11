@@ -9,7 +9,7 @@ scala:
 #   - "nightly"  # currently points to 3.7-dev
 # command to install dependencies
 # before_install:
-before_install:
+install:
     - python -V     # Python 2.7.3 !!!
     - # python3 -V  # Error!
     - pip -V        # pip 6.0.8 from /usr/local/lib/python2.7/dist-packages/pip-6.0.8-py2.7.egg (python 2.7)
@@ -30,16 +30,18 @@ before_install:
     - # ls -R
     - python --version
     - whereis python3
-    - ~/virtualenv/python3.6.0/bin/Python -V
-    - ~/virtualenv/python3.6.0/bin/pip -V    
-    - source ~/virtualenv/python3.6.0/bin/activate
+    - which python3
+    - # ~/virtualenv/python3.6.0/bin/Python -V
+    - #~/virtualenv/python3.6.0/bin/pip -V
+    - ls -R ~/virtualenv/py*
+    - # source ~/virtualenv/python3.6.0/bin/activate
     - python --version
-    - python3 --version
+    - # python3 --version
     - pip --version
-    - pip3 --version
+    - # pip3 --version
     - pip install --upgrade flake8
     - flake8 . --count --max-line-length=127 --statistics --exit-zero
-install:
+#  install:
     -ls
 before_script:
     flake8 . --count --max-line-length=127 --statistics --exit-zero
