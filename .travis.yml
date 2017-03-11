@@ -1,6 +1,5 @@
 sudo: false
 language: scala  # NOT a Python repo!
-language: scala
 scala:
    - 2.9.3
    - 2.10.4
