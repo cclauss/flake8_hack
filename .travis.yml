@@ -31,7 +31,9 @@ before_install:
     - python3 --version
     - source ~/virtualenv/python3.6.0/bin/activate
     - python --version
+    - python3 --version
     - pip --version
+    - pip3 --version
     - pip install --upgrade flake8
     - flake8 . --count --max-line-length=127 --statistics --exit-zero
 install:
