@@ -17,8 +17,10 @@ echo "finish"
 ls -Fla --color
 echo "home/travis/virtualenv"
 ls -Fla --color home/travis/virtualenv
-echo "opt/python/3.6.0"
-ls -Fla --color opt/python/3.6.0
+echo "/home/travis"
+ls -Fla --color /home/travis
+echo "opt/python/3.6.0/python3.6.0"
+ls -Fla --color opt/python/3.6.0/python3.6.0
 source home/travis/virtualenv/python3.6.0/bin/activate
 # source ./home/travis/virtualenv/python3.6.0/bin/activate
 # whereis -b python3  # search only binaries -- python3: /usr/lib/python3
