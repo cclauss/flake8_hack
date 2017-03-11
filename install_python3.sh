@@ -15,11 +15,11 @@ wget https://s3.amazonaws.com/travis-python-archives/binaries/ubuntu/14.04/x86_6
 tar xjf python-3.6.0.tar.bz2
 echo "finish"
 ls -Fla --color
-echo "home/travis"
-ls -Fla --color home/travis
-echo "opt/python"
-ls -Fla --color opt/python
-# source ~/virtualenv/python3.6.0/bin/activate
+echo "home/travis/virtualenv"
+ls -Fla --color home/travis/virtualenv
+echo "opt/python/3.6.0"
+ls -Fla --color opt/python/3.6.0
+source home/travis/virtualenv/python3.6.0/bin/activate
 # source ./home/travis/virtualenv/python3.6.0/bin/activate
 # whereis -b python3  # search only binaries -- python3: /usr/lib/python3
 # ls -R /usr/lib/pyth*
