@@ -28,7 +28,6 @@ before_install:
     - ls
     - ls -R
     - python --version
-    - python3 --version
     - source ~/virtualenv/python3.6.0/bin/activate
     - python --version
     - python3 --version
