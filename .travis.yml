@@ -9,7 +9,14 @@ scala:
 #   - "nightly"  # currently points to 3.7-dev
 # command to install dependencies
 before_install:
-    - source install_python3.sh
+    - # source install_python3.sh
+    - $HOME
+    - pwd
+    - wget https://s3.amazonaws.com/travis-python-archives/binaries/ubuntu/14.04/x86_64/python-3.6.0.tar.bz2
+    - tar xjf python-3.6.0.tar.bz2
+    - source ~/virtualenv/python3.6.0/bin/activate
+    - python -V
+    - pip -V
 before_script:
     flake8 . --count --max-line-length=127 --statistics --exit-zero
 script:
