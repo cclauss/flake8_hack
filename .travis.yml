@@ -41,8 +41,8 @@ install:
     - # pip3 --version
     - pip install --upgrade flake8
     - flake8 . --count --max-line-length=127 --statistics --exit-zero
-#  install:
-    -ls
+    - #  install:
+    - ls
 before_script:
     flake8 . --count --max-line-length=127 --statistics --exit-zero
 script:
