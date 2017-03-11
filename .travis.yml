@@ -30,7 +30,7 @@ install:
     - # ls -R
     - python --version
     - whereis python3
-    - which python3
+    - # which python3
     - # ~/virtualenv/python3.6.0/bin/Python -V
     - # ~/virtualenv/python3.6.0/bin/pip -V
     - ls -R ~/virtualenv/py*
@@ -38,6 +38,7 @@ install:
     - python --version
     - # python3 --version
     - pip --version
+    - ls -R /usr/lib/pyth*
     - # pip3 --version
     - pip install --upgrade flake8
     - flake8 . --count --max-line-length=127 --statistics --exit-zero
