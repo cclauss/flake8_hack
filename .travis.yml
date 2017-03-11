@@ -11,8 +11,8 @@ scala:
 #   - "nightly"  # currently points to 3.7-dev
 # command to install dependencies
 before_install:
-    - python -V
-    - python3 -V
+    - python -V     # Python 2.7.3 !!!
+    - # python3 -V  # Error!
     - pip -V
     - pip3 -V
     - ls
