@@ -22,8 +22,8 @@ before_install:
     - mkdir Python3
     - cd Python3
     - pwd
-    - wget  # https://s3.amazonaws.com/travis-python-archives/binaries/ubuntu/14.04/x86_64/python-2.7.13.tar.bz2
-    - curl
+    - wget https://s3.amazonaws.com/travis-python-archives/binaries/ubuntu/14.04/x86_64/python-2.7.13.tar.bz2
+    - ls
     - tar xjf python-3.6.0.tar.bz2
     - ls
     - source ~/virtualenv/python3.6.0/bin/activate
