@@ -32,7 +32,7 @@ install:
     - whereis python3
     - which python3
     - # ~/virtualenv/python3.6.0/bin/Python -V
-    - #~/virtualenv/python3.6.0/bin/pip -V
+    - # ~/virtualenv/python3.6.0/bin/pip -V
     - ls -R ~/virtualenv/py*
     - # source ~/virtualenv/python3.6.0/bin/activate
     - python --version
