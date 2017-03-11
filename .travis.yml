@@ -11,8 +11,13 @@ scala:
 #   - "nightly"  # currently points to 3.7-dev
 # command to install dependencies
 before_install:
+    - python -V
+    - python3 -V
+    - pip -V
+    - pip3 -V
     - ls
-    - tar xjf python-3.6.0.tar.bz2 --directory /
+    - tar xjf python-3.6.0.tar.bz2 --directory .
+    - ls
     - source ~/virtualenv/python3.6.0/bin/activate
     - python --version
     - pip --version
