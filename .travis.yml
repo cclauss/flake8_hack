@@ -19,17 +19,20 @@ install:
     - echo ~
     - echo $PATH
     - pwd
-    - ls
-    - cd ~
+    - ls --help
+    - # cd ~
     - pwd
     - ls
     - #mkdir Python3
     - #cd Python3
     - #pwd
     - wget https://s3.amazonaws.com/travis-python-archives/binaries/ubuntu/14.04/x86_64/python-3.6.0.tar.bz2
-    - ls
     - tar xjf python-3.6.0.tar.bz2
-    - source ./home/travis/virtualenv/python3.6.0/bin/activate
+    - # source ./home/travis/virtualenv/python3.6.0/bin/activate
+    - whereis --help
+    - whereis python3
+    - which --help
+    - # which python3
     - python -V
     - pip -V
     - python3 -V
