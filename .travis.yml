@@ -29,8 +29,7 @@ install:
     - wget https://s3.amazonaws.com/travis-python-archives/binaries/ubuntu/14.04/x86_64/python-3.6.0.tar.bz2
     - tar xjf python-3.6.0.tar.bz2
     - # source ./home/travis/virtualenv/python3.6.0/bin/activate
-    - whereis --help
-    - whereis python3
+    - whereis -b python3  # search only binaries
     - which --help
     - # which python3
     - python -V
