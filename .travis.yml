@@ -10,7 +10,9 @@ scala:
 # command to install dependencies
 before_install:
     - # source install_python3.sh
-    - $HOME
+    - echo $HOME
+    - pwd
+    - cd /
     - pwd
     - wget https://s3.amazonaws.com/travis-python-archives/binaries/ubuntu/14.04/x86_64/python-3.6.0.tar.bz2
     - tar xjf python-3.6.0.tar.bz2
