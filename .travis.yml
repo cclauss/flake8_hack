@@ -16,7 +16,10 @@ before_install:
     - pip -V        # pip 6.0.8 from /usr/local/lib/python2.7/dist-packages/pip-6.0.8-py2.7.egg (python 2.7)
     - # pip install --upgrade pip setuptools  # Error
     - # pip3 -V     # Error!
+    - pwd
     - ls
+    - mkdir Python3
+    - cd Python3
     - tar xjf python-3.6.0.tar.bz2 --directory .
     - ls
     - source ~/virtualenv/python3.6.0/bin/activate
