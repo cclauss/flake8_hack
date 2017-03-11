@@ -1,8 +1,6 @@
 sudo: false
 language: scala  # NOT a Python repo!
 scala:
-   - 2.9.3
-   - 2.10.4
    - 2.11.2
 #language: python
 #python:
@@ -22,7 +20,7 @@ before_install:
     - mkdir Python3
     - cd Python3
     - pwd
-    - wget https://s3.amazonaws.com/travis-python-archives/binaries/ubuntu/14.04/x86_64/python-2.7.13.tar.bz2
+    - wget https://s3.amazonaws.com/travis-python-archives/binaries/ubuntu/14.04/x86_64/python-3.6.0.tar.bz2
     - ls
     - tar xjf python-3.6.0.tar.bz2
     - ls
