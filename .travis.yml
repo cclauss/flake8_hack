@@ -10,8 +10,8 @@ scala:
 # command to install dependencies
 before_install:
     - # source install_python3.sh
-    - echo $HOME
-    - pwd
+    - echo $HOME  # /home/travis
+    - pwd         # /home/travis/build/cclauss/flake8_hack
     - # cd /
     - # pwd
     - # mkdir Python_3.6.0
