@@ -5,7 +5,7 @@ echo ~
 pwd
 ls
 python -V     # Python 2.7.3 !!!
-/home/travis/virtualenv/python3.2_with_system_site_packages/bin/activate
+sudo /home/travis/virtualenv/python3.2_with_system_site_packages/bin/activate
 python -V     # Python 2.7.3 !!!
 # python3 -V  # Error!
 pip -V        # pip 6.0.8 from /usr/local/lib/python2.7/dist-packages/pip-6.0.8-py2.7.egg (python 2.7)
