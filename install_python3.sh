@@ -1,5 +1,5 @@
 #!/bin/sh
-echo $PATH
+echo  $PATH
 echo $HOME
 echo ~
 pwd
