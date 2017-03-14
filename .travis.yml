@@ -19,6 +19,6 @@ before_script:
     flake8 . --count --max-line-length=127 --statistics --exit-zero
 script:
     - true  # a basic noop
-#notifications:
-#    on_success: change
-#    on_failure: always
+notifications:
+    on_success: change
+    on_failure: never  # always
