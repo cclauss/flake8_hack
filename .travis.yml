@@ -19,11 +19,16 @@ before_install:
     - wget https://s3.amazonaws.com/travis-python-archives/binaries/ubuntu/14.04/x86_64/python-3.6.0.tar.bz2
     - tar xjf python-3.6.0.tar.bz2  # creates ./home and ./opt
     - ls home
+    - ls home/travis
     - ls opt
+    - ls opt/python
     - # source python-3.6.0/bin/activate
     - # source ~/virtualenv/python3.6.0/bin/activate
     - python -V
     - pip -V
+    - pip install --upgrade pip
+    - pip install --upgrade setuptools
+    - pip install --upgrade flake8
 before_script:
     flake8 . --count --max-line-length=127 --statistics --exit-zero
 script:
