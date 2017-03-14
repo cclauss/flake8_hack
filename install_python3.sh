@@ -5,12 +5,14 @@ echo ~
 pwd
 ls
 python -V     # Python 2.7.3 !!!
+/home/travis/virtualenv/python3.2_with_system_site_packages/bin/activate
+python -V     # Python 2.7.3 !!!
 # python3 -V  # Error!
 pip -V        # pip 6.0.8 from /usr/local/lib/python2.7/dist-packages/pip-6.0.8-py2.7.egg (python 2.7)
 # pip install --upgrade pip setuptools  # Error
 # pip3 -V     # Error!
 echo "start"
-cd /
+# cd /
 ls -Fla --color
 wget https://s3.amazonaws.com/travis-python-archives/binaries/ubuntu/14.04/x86_64/python-3.6.0.tar.bz2
 tar xjf python-3.6.0.tar.bz2
