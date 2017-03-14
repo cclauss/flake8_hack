@@ -22,10 +22,13 @@ before_install:
     - ls home/travis -Fla --color
     - ls home/travis/virtualenv -Fla --color
     - ls home/travis/virtualenv/python3.6.0/bin
-    - home/travis/virtualenv/python3.6.0/bin/python -V
-    - home/travis/virtualenv/python3.6.0/bin/pip -V
+    - #home/travis/virtualenv/python3.6.0/bin/python -V
+    - #home/travis/virtualenv/python3.6.0/bin/pip -V
     - ls opt -Fla --color
     - ls opt/python -Fla --color
+    - ls /opt/python
+    - cp opt/python/3.6.0 /opt/python
+    - python3 -V
     - ls opt/python/3.6.0 -Fla --color
     - ls opt/python/3.6.0/bin -Fla --color
     - # ls opt/python/3.6.0/python3.6.0/bin
@@ -33,14 +36,14 @@ before_install:
     - source home/travis/virtualenv/python3.6.0/bin/activate
     - python -V
     - pip -V
-    - home/travis/virtualenv/python3.6.0/bin/python3 -V
-    - home/travis/virtualenv/python3.6.0/bin/python  -V
-    - home/travis/virtualenv/python3.6.0/bin/pip3    -V
-    - home/travis/virtualenv/python3.6.0/bin/pip     -V
-    - opt/python/3.6.0/bin/python3                   -V
-    - opt/python/3.6.0/bin/python                    -V
-    - opt/python/3.6.0/bin/pip3                      -V
-    - opt/python/3.6.0/bin/pip                       -V
+    - #home/travis/virtualenv/python3.6.0/bin/python3 -V
+    - #home/travis/virtualenv/python3.6.0/bin/python  -V
+    - #home/travis/virtualenv/python3.6.0/bin/pip3    -V
+    - #home/travis/virtualenv/python3.6.0/bin/pip     -V
+    - #opt/python/3.6.0/bin/python3                   -V
+    - #opt/python/3.6.0/bin/python                    -V
+    - #opt/python/3.6.0/bin/pip3                      -V
+    - #opt/python/3.6.0/bin/pip                       -V
     - python -V
     - pip -V
     - pip install --upgrade pip
