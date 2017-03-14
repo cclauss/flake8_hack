@@ -12,12 +12,13 @@ before_install:
     - # source install_python3.sh
     - echo $HOME
     - pwd
-    - cd /
-    - pwd
+    - # cd /
+    - # pwd
     - # mkdir Python_3.6.0
     - # cd Python_3.6.0
     - wget https://s3.amazonaws.com/travis-python-archives/binaries/ubuntu/14.04/x86_64/python-3.6.0.tar.bz2
     - tar xjf python-3.6.0.tar.bz2
+    - ls -r python3.6.0
     - source ~/virtualenv/python3.6.0/bin/activate
     - python -V
     - pip -V
