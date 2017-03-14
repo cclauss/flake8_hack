@@ -19,11 +19,25 @@ before_install:
     - wget https://s3.amazonaws.com/travis-python-archives/binaries/ubuntu/14.04/x86_64/python-3.6.0.tar.bz2
     - tar xjf python-3.6.0.tar.bz2  # creates ./home and ./opt
     - ls home -Fla --color
+    - ls home/travis -Fla --color
     - ls home/travis/virtualenv -Fla --color
+    - ls home/travis/virtualenv/python3.6.0/bin
     - ls opt -Fla --color
+    - ls opt/python -Fla --color
     - ls opt/python/3.6.0 -Fla --color
+    - ls opt/python/3.6.0/python3.6.0/bin
     - # source python-3.6.0/bin/activate
     - source home/travis/virtualenv/python3.6.0/bin/activate
+    - python -V
+    - pip -V
+    - home/travis/virtualenv/python3.6.0/bin/python3 -V
+    - home/travis/virtualenv/python3.6.0/bin/python  -V
+    - home/travis/virtualenv/python3.6.0/bin/pip3    -V
+    - home/travis/virtualenv/python3.6.0/bin/pip     -V
+    - opt/python/3.6.0/python3.6.0/bin/python3       -V
+    - opt/python/3.6.0/python3.6.0/bin/python        -V
+    - opt/python/3.6.0/python3.6.0/bin/pip3          -V
+    - opt/python/3.6.0/python3.6.0/bin/pip           -V
     - python -V
     - pip -V
     - pip install --upgrade pip
