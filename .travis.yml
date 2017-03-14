@@ -17,8 +17,10 @@ before_install:
     - # mkdir Python_3.6.0
     - # cd Python_3.6.0
     - wget https://s3.amazonaws.com/travis-python-archives/binaries/ubuntu/14.04/x86_64/python-3.6.0.tar.bz2
+    - ls
     - tar xjf python-3.6.0.tar.bz2
-    - ls -r python3.6.0
+    - ls
+    - source python-3.6.0/bin/activate
     - source ~/virtualenv/python3.6.0/bin/activate
     - python -V
     - pip -V
