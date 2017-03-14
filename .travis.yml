@@ -1,6 +1,6 @@
-dist: yakkety
-# dist: xenial
-# dist: trusty  # https://wiki.ubuntu.com/Releases
+# dist: yakkety  # silently ignored and trusty is used
+# dist: xenial   # silently ignored and trusty is used
+dist: trusty     # Ubuntu 14.04.5 LTS https://wiki.ubuntu.com/Releases
 sudo: true
 language: scala  # NOT a Python repo!
 scala:
@@ -17,13 +17,12 @@ before_install:
     - pip -V
     - python3 -V
     - pip3 -V
-    - pip3 install --upgrade pip
-    - pip3 install --upgrade setuptools
+    - pip3 install --upgrade pip setuptools
     - pip3 install --upgrade flake8
 before_script:
     - flake8 . --count --max-line-length=127 --statistics --exit-zero
 script:
-    - true  # a basic noop
+    - flake8 . --count --max-line-length=127 --select=E999  # Stop build on syntax errors
 notifications:
     on_success: change
     on_failure: never  # always
