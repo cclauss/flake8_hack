@@ -4,8 +4,9 @@ echo $HOME
 echo ~
 pwd
 ls
-/home/travis/virtualenv/python3.2_with_system_site_packages -Fla --color
-/home/travis/virtualenv/python3.2_with_system_site_packages/bin -Fla --color
+ls /home/travis/virtualenv/
+ls /home/travis/virtualenv/python3.2_with_system_site_packages -Fla --color
+ls /home/travis/virtualenv/python3.2_with_system_site_packages/bin -Fla --color
 python -V     # Python 2.7.3 !!!
 /home/travis/virtualenv/python3.2_with_system_site_packages/bin/python -V
 /home/travis/virtualenv/python3.2_with_system_site_packages/bin/pip    -V
