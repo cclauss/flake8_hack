@@ -25,7 +25,8 @@ before_install:
     - ls opt -Fla --color
     - ls opt/python -Fla --color
     - ls opt/python/3.6.0 -Fla --color
-    - ls opt/python/3.6.0/python3.6.0/bin
+    - ls opt/python/3.6.0/python3.6.0 -Fla --color
+    - # ls opt/python/3.6.0/python3.6.0/bin
     - # source python-3.6.0/bin/activate
     - source home/travis/virtualenv/python3.6.0/bin/activate
     - python -V
