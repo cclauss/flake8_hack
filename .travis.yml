@@ -1,4 +1,6 @@
-dist: xenial
+dist: yakkety
+# dist: xenial
+# dist: trusty  # https://wiki.ubuntu.com/Releases
 sudo: true
 language: scala  # NOT a Python repo!
 scala:
