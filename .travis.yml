@@ -1,3 +1,4 @@
+dist: trusty
 sudo: true
 language: scala  # NOT a Python repo!
 scala:
@@ -9,14 +10,16 @@ scala:
 #   - "nightly"  # currently points to 3.7-dev
 # command to install dependencies
 before_install:
-    - source install_python3.sh
+#   - source install_python3.sh
     - python -V
     - pip -V
-    - pip install --upgrade pip
-    - pip install --upgrade setuptools
-    - pip install --upgrade flake8
+    - python3 -V
+    - pip3 -V
+    - pip3 install --upgrade pip
+    - pip3 install --upgrade setuptools
+    - pip3 install --upgrade flake8
 before_script:
-    flake8 . --count --max-line-length=127 --statistics --exit-zero
+    - flake8 . --count --max-line-length=127 --statistics --exit-zero
 script:
     - true  # a basic noop
 notifications:
