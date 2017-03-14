@@ -1,5 +1,14 @@
 #!/bin/sh
-echo  $PATH
+python -V     # Python 2.7.3 !!!
+/home/travis/virtualenv/python3.2_with_system_site_packages/bin/activate
+python -V     # Python 2.7.3 !!!
+python /home/travis/virtualenv/python3.2_with_system_site_packages/bin/activate_this.py
+python -V
+/home/travis/virtualenv/python3.2_with_system_site_packages/bin/python -V
+/home/travis/virtualenv/python3.2_with_system_site_packages/bin/pip    -V
+exit
+
+echo $PATH
 echo $HOME
 echo ~
 pwd
