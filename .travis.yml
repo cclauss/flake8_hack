@@ -16,6 +16,8 @@ scala:
 #   - "nightly"  # currently points to 3.7-dev
 # command to install dependencies
 before_install:
+    - build https://github.com/docker-library/python.git#:3.6/alpine`.
+    - 9
     - docker pull python:3.6.1
     - 9
 #   - source install_python3.sh
