@@ -16,7 +16,8 @@ scala:
 #   - "nightly"  # currently points to 3.7-dev
 # command to install dependencies
 before_install:
-     docker pull python:3.6.1
+    - docker pull python:3.6.1
+    - 9
 #   - source install_python3.sh
     - python -V
     - pip -V
